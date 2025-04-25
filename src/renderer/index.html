@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RPG Maker Dev Launcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RPG Maker Dev Launcher</h1>
+    </header>
+    
+    <div class="project-container">
+      <div id="projectInfo" class="project-info">
+        <!-- Project info will be displayed here -->
+        <div class="loading">Detecting game...</div>
+      </div>
+      
+      <div class="actions">
+        <button id="launchBtn" disabled>Launch Game</button>
+      </div>
+    </div>
+    
+    <div id="notification" class="notification hidden"></div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>
