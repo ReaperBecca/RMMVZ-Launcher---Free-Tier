@@ -116,6 +116,9 @@ Ensure your folder structure matches the required format
 Check that your game's www folder contains an index.html file
 Verify file permissions allow the launcher to read your game files
 
+## Editing the Launcher
+Sometimes when you build your launcher, the file "./dist/builder-effective-config.yaml" is not updated. This can cause errors when you try to build the installers. To fix this, you can manually edit the "./dist/builder-effective-config.yaml" file.
+
 # Build Errors
 If you encounter errors during the build process:
 
