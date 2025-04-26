@@ -17,37 +17,43 @@ RMMVZ Launcher - Free Tier/
 │       └── ...
 └── ...
 
-Copy
+
 
 
 The launcher will automatically detect and run your game when launched
 Development Dependencies
 Before building installers, install the following dependencies:
 
-# Install Node.js dependencies
+# Global NPM permission for Windows
+if you have not already, run Windows Powershell as Administrator and run the following command so that you may run the other commands in this guide:
+set-executionpolicy remotesigned
+
+
+# starting from the project folder
+## Install Node.js dependencies
 npm install
 
-# Install Electron Builder globally
+## Install Electron Builder globally
 npm install -g electron-builder
 
 
-## Building Installers
+# Building Installers
 Windows Installer (.exe)
-# Build Windows installer
+## Build Windows installer
 npm run build:win
 
 
 This creates a Windows installer in the dist folder.
 
 macOS Installer (.dmg)
-# Build macOS installer (must be run on macOS)
+## Build macOS installer (must be run on macOS)
 npm run build:mac
 
 
 This creates a macOS .dmg file in the dist folder.
 
 Linux Installer (.AppImage, .deb, .rpm)
-# Build Linux installers
+## Build Linux installers
 npm run build:linux
 
 
@@ -59,8 +65,8 @@ If you have access to all required platforms (or are using a CI service), you ca
 npm run build:all
 
 
-Customizing the Installer
-Application Name and Version
+# Customizing the Installer
+## Application Name and Version
 Edit the package.json file to change:
 
 name: Your game's name (no spaces, lowercase)
@@ -124,11 +130,10 @@ If you need additional help, please refer to:
 
 Electron documentation: https://www.electronjs.org/docs
 Electron Builder documentation: https://www.electron.build/
+Contact Rebecca on Discord (@ReaperBecca)<@152322669214171145>
 RPG Maker community forums
 
 
 
 
 Note: This launcher is designed to work with RPG Maker MV and MZ games exported for web browsers. It may not work with other game engines or non-web exports.
-
-For all questions and concerns, please Contact Rebecca on Discord (@ReaperBecca)<@152322669214171145>
