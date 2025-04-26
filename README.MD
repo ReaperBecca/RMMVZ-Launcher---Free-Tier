@@ -92,6 +92,8 @@ icon.png - Linux icon (at least 512x512px)
 
 
 # Installer Customization
+## You MUST set the following in the electron-builder.yml file or you WILL run into errors
+
 For advanced customization, edit the electron-builder.yml file. You can customize:
 
 Publisher information
