@@ -82,8 +82,8 @@ Example:
   "description": "An epic adventure in a fantasy world"
 }
 
-
-# Application Icon
+# You MUST set the following in the electron-builder.yml file or you WILL run into errors
+## Application Icon
 Replace the icon files in the build folder:
 
 icon.ico - Windows icon
@@ -91,8 +91,7 @@ icon.icns - macOS icon
 icon.png - Linux icon (at least 512x512px)
 
 
-# Installer Customization
-## You MUST set the following in the electron-builder.yml file or you WILL run into errors
+## Installer Customization
 
 For advanced customization, edit the electron-builder.yml file. You can customize:
 
